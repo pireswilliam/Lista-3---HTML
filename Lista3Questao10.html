@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lista 3 Q10</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+    			function tresnumeros(n){
+        		var vr = /[^0-9.]/;
+        		vr.lastIndex = 0;
+        		var formu = n;
+        		if (vr.test(formu.value)){
+          		formu.value = "";}}
+		</script>
+	</head>
+	<body>
+		<header> 
+			<center><h1> Receber Três Números <h1></center>
+		</header>
+			<nav align="center">
+				<form>
+				<input class="form-control input-sm" onkeyup="tresnumeros(this);" maxlength="3" type="text"  ng-model="numero.valor" />
+				<input type="submit" name="valide">
+				</form>
+			</nav>
+				<footer align="left">
+					<small>Todos os direitos reservados</small>
+				</footer>
+	</body>
+</html>

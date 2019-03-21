@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista 3 Q6</title>
+  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="pg_css.css">
+    <script type="text/javascript" scr="pg_css.css"></script>
+	<style>
+	</style>
+<script>
+    var palavrausada = prompt("Digite uma palavra");
+    function palavraPalindromo(palavrausada){
+      palavrausada=palavrausada.toLowerCase().replace(/\s/g,"");
+      palavracontrario=palavrausada.split("").reverse().toString();
+      for (var i = 0; i < ((palavracontrario.length)-1); i++) {
+        palavracontrario=palavracontrario.replace(",","");
+      }; 
+      if(palavrausada==palavracontrario){ 
+        alert (resultado="Esta palavra é um palindromo!");
+      }
+      else{   
+        alert (resultado="Esta palavra não é um palindromo!");
+      }
+    }
+    palavraPalindromo(palavrausada);
+</script>
+  </head>
+    <header>
+      <center> <h1> Palindromo ou não </h1> </center>
+    </header>   
+        <nav>
+        </nav>
+     			<div class="corpo">
+     					<h2> Teste Palindromo </h2>
+             <h4> Descubra se uma palavra é palindromo: </h4>
+              <ul>
+                <li>
+                  <a href="lista3Questao6.html">
+                         Clique aqui para digitar a palavra
+                  </a>
+                 </li>
+				</div>
+	<footer>
+        <small>Todos os direitos reservados</small>
+    </footer>
+<body>
+</body>
+</html>

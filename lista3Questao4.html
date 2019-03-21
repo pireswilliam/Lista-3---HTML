@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Lista 3 Q4</title>
+  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="pg_css.css">
+    <script type="text/javascript" scr="pg_css.css"></script>
+	<style>
+	</style>
+         <script>
+          function ocultarmostrar(pr){
+            if (document.getElementById(pr).style.display =='block'){
+              document.getElementById(pr).style.display = 'none';
+              document.getElementById('b'+ pr).value="Mostrar mais";}
+              else { document.getElementById(pr).style.display ='block';
+            document.getElementById('b'+ pr).value="Ocultar";}
+          }
+         </script>
+</head>
+<header>
+       <center> <h1> Ocultar/Mostrar Parágrafo </h1> </center>
+</header> 
+        <nav align="center">
+     			<div class="corpo">
+     					<h2> Parágrafo oculto </h2>
+               <br>
+                  <div id="txt1" class="hidden">
+                        Texto escondido <br> Sistemas de Informação - UNIEURO - Prof.: Aldo <br> Sétimo Semestre - Desenvolvimento Mobile
+                  </div>
+                    <br>
+                    <input id="btxt1" type="button"  value ="Mostrar mais" onClick="ocultarmostrar('txt1')" />
+				  </div>
+        </nav>
+	<footer>
+        <small>Todos os direitos reservados</small>
+    </footer>
+<body>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista 3 Q5</title>
+  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="pg_css.css">
+    <script type="text/javascript" scr="pg_css.css"></script>
+	<style>
+	</style>
+          <script type="text/javascript">
+          function validar(){
+            var senha = frmlr.senha.value;
+            var csenha = frmlr.csenha.value;
+        
+              if(senha == "" || senha.length <= 5){
+                alert('Preencha o campo "Senha" com 6 à 10 caracteres');
+                frmlr.senha.focus();
+                return false;
+              }
+                if(csenha == "" || csenha.length <= 5){
+                  alert('Preencha o campo "Senha" com 6 à 10 caracteres');
+                  frmlr.csenha.focus();
+                  return false;
+                }
+                  if (senha != csenha) {
+                    alert('Senhas diferentes');
+                    frmlr.senha.focus();
+                    return false;
+                  }
+          }
+        </script>
+</head>
+<header>
+       <center> <h1> Formulário: </h1> </center>
+</header>
+	<na align="center">
+     			<div class="corpo">
+                  <h2>Cadastrar Usuário</h2>
+                      <form name="frmlr" action="#" method="POST">
+                          Login: <input type="text" name="nome" required >
+                          Senha: <input type="password" name="senha" size="10" maxlength="10" required >
+                          Confirmar Senha: <input type="password" name="csenha" size="10" maxlength="10" required >
+                          <input type="submit" value="Enviar" onclick="return validar()">
+                      </form>
+				</div>
+	</na>
+	<footer align="left">
+        <small>Todos os direitos reservados</small>
+    </footer>
+<body>
+</body>
+</html>
